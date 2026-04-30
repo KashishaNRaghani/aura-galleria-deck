@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OngalDay Mall | The Mega Mall</title>
+    <meta name="description" content="Aura Galleria: A premium, cinematic, interactive sales experience.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Loading Overlay -->
+    <div id="loader">
+        <div class="loader-text">AURA GALLERIA</div>
+        <div class="loader-progress"></div>
+    </div>
+
+    <!-- Hidden Navigation / Hotspots -->
+    <nav id="global-nav">
+        <div class="nav-logo">AURA</div>
+        <div class="nav-indicators">
+            <div class="indicator active" data-target="scene-1"></div>
+            <div class="indicator" data-target="scene-2"></div>
+            <div class="indicator" data-target="scene-3"></div>
+            <div class="indicator" data-target="scene-4"></div>
+            <div class="indicator" data-target="scene-5"></div>
+            <div class="indicator" data-target="scene-6"></div>
+        </div>
+        <div class="nav-menu-btn" data-target="scene-3">MENU</div>
+    </nav>
+
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+
+            <!-- SCENE 1: Opening -->
+            <section class="scene scene-hero" id="scene-1">
+                <div class="scene-bg">
+                    <video id="hero-video" class="hero-video" src="assets/Hero section.mp4" playsinline muted></video>
+                    <div class="video-overlay" id="video-overlay"></div>
+                </div>
+                <div class="hero-content" id="hero-content">
+                    <h1 class="title-reveal">AURA<br>GALLERIA</h1>
+                    <p class="subtitle-reveal">THE FUTURE OF RETAIL, ENTERTAINMENT & OPPORTUNITY</p>
+                    <button class="cta-enter" id="enter-btn"><span>PLAY CINEMATIC EXPERIENCE</span></button>
+                </div>
+                <div class="post-hero-content" id="post-hero-content">
+                    <h2>THE VISION IS YOURS</h2>
+                    <button class="cta-connect">LET'S CONNECT</button>
+                </div>
+                <button class="skip-btn" id="skip-btn">SKIP TO EXPLORE</button>
+                <button class="mute-toggle-btn" id="mute-toggle-btn">UNMUTE</button>
+            </section>
+
+            <!-- SCENE 2: Scale & Footfall -->
+            <section class="scene scene-scale" id="scene-2">
+                <div class="scene-bg dark-bg"></div>
+                <div class="scale-container">
+                    <div class="scale-image">
+                        <img src="assets/Outside.jpeg" alt="Aura Galleria Exterior" class="anim-image" id="scale-img">
+                    </div>
+                    <div class="scale-content">
+                        <div class="scale-text">
+                            <h2 class="section-title">SCALE WITHOUT EQUAL</h2>
+                            <p class="section-desc">A convergence point for the world. Redefining the boundaries of
+                                architecture, commerce, and footfall.</p>
+                        </div>
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <div class="stat-number">50M+</div>
+                                <div class="stat-label">ANNUAL VISITORS</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-number">2M</div>
+                                <div class="stat-label">SQ FT OF RETAIL</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-number">300+</div>
+                                <div class="stat-label">LUXURY BRANDS</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SCENE 3: Retail Power -->
+            <section class="scene scene-retail" id="scene-3">
+                <div class="scene-bg">
+                    <img src="assets/Inside .png" alt="Interior Architecture" class="retail-bg-img" id="retail-img">
+                    <div class="dark-overlay"></div>
+                </div>
+                <div class="retail-wrapper">
+                    <div class="retail-header">
+                        <h2 class="section-title">THE RETAIL APEX</h2>
+                        <p class="retail-subtitle">Curated brand experiences redefining luxury commerce.</p>
+                    </div>
+                    <div class="retail-accordion">
+                        <div class="retail-panel">
+                            <img src="assets/Fashion Image.jpeg" alt="Fashion Image" class="panel-bg">
+                            <div class="panel-overlay"></div>
+                            <div class="panel-content">
+                                <h3>FASHION</h3>
+                                <p>Haute couture and avant-garde style from the world's finest design houses.</p>
+                                <a href="fashion.html" class="panel-btn">DISCOVER</a>
+                            </div>
+                        </div>
+                        <div class="retail-panel">
+                            <img src="assets/Technology Image.jpeg" alt="Technology Image" class="panel-bg">
+                            <div class="panel-overlay"></div>
+                            <div class="panel-content">
+                                <h3>TECHNOLOGY</h3>
+                                <p>Next-generation devices and immersive digital lifestyle hubs.</p>
+                                <a href="technology.html" class="panel-btn">DISCOVER</a>
+                            </div>
+                        </div>
+                        <div class="retail-panel">
+                            <img src="assets/Epicurism Image.jpeg" alt="Epicurism Image" class="panel-bg">
+                            <div class="panel-overlay"></div>
+                            <div class="panel-content">
+                                <h3>EPICURISM</h3>
+                                <p>Michelin-starred dining and artisanal culinary masterpieces.</p>
+                                <a href="epicurism.html" class="panel-btn">DISCOVER</a>
+                            </div>
+                        </div>
+                        <div class="retail-panel">
+                            <img src="assets/Wellness Image.jpeg" alt="Wellness Image" class="panel-bg">
+                            <div class="panel-overlay"></div>
+                            <div class="panel-content">
+                                <h3>WELLNESS</h3>
+                                <p>Holistic retreats and cutting-edge spa sanctuaries.</p>
+                                <a href="wellness.html" class="panel-btn">DISCOVER</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SCENE 4: Luxury Positioning -->
+            <section class="scene scene-luxury" id="scene-4">
+                <div class="scene-bg luxury-bg"></div>
+                <div class="luxury-content">
+                    <div class="luxury-line"></div>
+                    <h2 class="luxury-title">THE PINNACLE OF LUXURY</h2>
+                    <p class="luxury-desc">Curated spaces for the world's most prestigious marques. A statement of
+                        uncompromising quality.</p>
+                    <div class="luxury-brands-marquee-wrapper">
+                        <div class="luxury-brands-marquee">
+                            <div class="marquee-track">
+                                <div class="brand-box">MAISON</div>
+                                <div class="brand-box">AURA</div>
+                                <div class="brand-box">HORLOGERIE</div>
+                                <div class="brand-box">COUTURE</div>
+                                <div class="brand-box">ATELIER</div>
+                                <div class="brand-box">PARFUM</div>
+                                <div class="brand-box">EXQUISITE</div>
+                                <div class="brand-box">JEWELLERY</div>
+                                <div class="brand-box">MAISON</div>
+                                <div class="brand-box">AURA</div>
+                                <div class="brand-box">HORLOGERIE</div>
+                                <div class="brand-box">COUTURE</div>
+                                <div class="brand-box">ATELIER</div>
+                                <div class="brand-box">PARFUM</div>
+                                <div class="brand-box">EXQUISITE</div>
+                                <div class="brand-box">JEWELLERY</div>
+                            </div>
+                            <div class="marquee-track">
+                                <div class="brand-box">MAISON</div>
+                                <div class="brand-box">AURA</div>
+                                <div class="brand-box">HORLOGERIE</div>
+                                <div class="brand-box">COUTURE</div>
+                                <div class="brand-box">ATELIER</div>
+                                <div class="brand-box">PARFUM</div>
+                                <div class="brand-box">EXQUISITE</div>
+                                <div class="brand-box">JEWELLERY</div>
+                                <div class="brand-box">MAISON</div>
+                                <div class="brand-box">AURA</div>
+                                <div class="brand-box">HORLOGERIE</div>
+                                <div class="brand-box">COUTURE</div>
+                                <div class="brand-box">ATELIER</div>
+                                <div class="brand-box">PARFUM</div>
+                                <div class="brand-box">EXQUISITE</div>
+                                <div class="brand-box">JEWELLERY</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SCENE 5: Entertainment & Attractions -->
+            <section class="scene scene-entertainment" id="scene-5">
+                <div class="scene-bg ent-bg"></div>
+                <div class="ent-content-wrapper">
+                    <div class="ent-text-panel">
+                        <h2 class="ent-title">BEYOND<br>RETAIL</h2>
+                        <p class="ent-desc">Discover unprecedented entertainment spaces. Hover over the map to explore
+                            our signature attractions.</p>
+                        <div class="ent-info-box" id="ent-info-box">
+                            <h3 id="ent-info-title">EXPLORE THE MAP</h3>
+                            <p id="ent-info-desc">Interactive hotspots reveal the future of immersive experiences.</p>
+                        </div>
+                    </div>
+                    <div class="floorplan-container">
+                        <img src="assets/Floor plan.jpeg" alt="Floorplan Map" class="floorplan-img" id="floorplan-img">
+                        <div class="hotspot" style="top: 35%; left: 25%;" data-title="AQUA THEATRE"
+                            data-desc="A spectacular aquatic performance venue featuring state-of-the-art water dynamics and immersive viewing.">
+                            <div class="hotspot-pulse"></div>
+                            <div class="hotspot-content">AQUA THEATRE</div>
+                        </div>
+                        <div class="hotspot" style="top: 65%; left: 75%;" data-title="INDOOR METROPOLIS"
+                            data-desc="A sprawling climate-controlled cityscape bringing the best of urban energy indoors year-round.">
+                            <div class="hotspot-pulse"></div>
+                            <div class="hotspot-content">INDOOR METROPOLIS</div>
+                        </div>
+                        <div class="hotspot" style="top: 50%; left: 50%;" data-title="THE AURA DOME"
+                            data-desc="The architectural crown jewel. A massive geodesic structure offering panoramic views and world-class events.">
+                            <div class="hotspot-pulse"></div>
+                            <div class="hotspot-content">THE AURA DOME</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SCENE 6: Events & Global Platform -->
+            <section class="scene scene-climax" id="scene-6">
+                <div class="scene-bg climax-bg">
+                    <div class="climax-rays"></div>
+                </div>
+                <div class="climax-content">
+                    <h2 class="climax-title">THE GLOBAL STAGE</h2>
+                    <p class="climax-desc">More than a destination. A cultural epicenter. Are you ready to take your
+                        place?</p>
+                    <div class="cta-group">
+                        <button class="cta-primary" id="secure-btn">SECURE YOUR SPACE</button>
+                        <button class="cta-secondary" onclick="window.location.href='prospectus.html'">DOWNLOAD
+                            PROSPECTUS</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FOOTER -->
+            <footer class="site-footer" id="footer">
+                <div class="footer-content-wrapper">
+                    <div class="footer-info">
+                        <h2 class="footer-title">LET'S CONNECT</h2>
+                        <p>Contact us to explore unparalleled opportunities.</p>
+                        <p class="footer-email"><a href="mailto:contact@auragalleria.com">contact@auragalleria.com</a>
+                        </p>
+                        <p class="footer-phone">+1 (800) 123-4567</p>
+                    </div>
+                    <div class="footer-form-container">
+                        <form id="enquiry-form">
+                            <input type="text" id="form-name" placeholder="Name" required>
+                            <input type="email" id="form-email" placeholder="Email Address" required>
+                            <textarea id="form-message" placeholder="Message" required></textarea>
+                            <button type="submit" class="cta-submit-form">CONTACT US</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    &copy; 2026 AURA GALLERIA. ALL RIGHTS RESERVED.
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+    <!-- Thank You Overlay -->
+    <div id="thank-you-overlay">
+        <h2 class="overlay-title">THANK YOU</h2>
+        <p class="overlay-desc">We will be in touch shortly.</p>
+    </div>
+
+    <!-- GSAP & ScrollTrigger Core -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <!-- Custom Logic -->
+    <script src="script.js"></script>
+</body>
+
+</html>
